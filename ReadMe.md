@@ -111,11 +111,7 @@ Complete as much as you can within 2 hours. Focus on:
 1. Clone the repository
 2. Install dependencies
 3. Run the backend server 
-```bash
-python app.py
-```
+    python app.py
 4. Run the frontend server 
-```bash
-python -m http.server 5500
-```
+    python -m http.server 5500
 5. Open the frontend in your browser
