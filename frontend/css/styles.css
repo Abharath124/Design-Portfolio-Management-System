@@ -1,0 +1,102 @@
+/* frontend/css/styles.css */
+body {
+    font-family: system-ui, Arial;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.btn {
+    padding: 8px 10px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.muted {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.form-card {
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin: 16px 0;
+    background: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed #f0f0f0;
+}
+
+.row-actions button {
+    margin-left: 8px;
+}
+
+.images img {
+    width: 200px;
+    margin-right: 8px;
+}
+
+@media (max-width:600px) {
+    .images img {
+        width: 100%;
+        display: block;
+        margin-bottom: 8px;
+    }
+}

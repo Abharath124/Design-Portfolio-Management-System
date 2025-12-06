@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Admin - Manage Projects</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 16px
+        }
+
+        .form-card {
+            max-width: 800px;
+            margin-bottom: 20px
+        }
+
+        .row {
+            border-bottom: 1px solid #eee;
+            padding: 8px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        button {
+            padding: 6px 10px;
+            border-radius: 6px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Admin - Projects</h1><a href="index.html">Gallery</a>
+    </header>
+
+    <main>
+        <section class="form-card">
+            <h2 id="formTitle">Add Project</h2>
+            <form id="projectForm">
+                <input name="id" type="hidden" />
+                <div><label>Title<br><input name="title" required style="width:100%" /></label></div>
+                <div><label>Description<br><textarea name="description" required
+                            style="width:100%;height:100px"></textarea></label></div>
+                <div style="display:flex;gap:8px;margin-top:8px">
+                    <input name="category" placeholder="Category" />
+                    <input name="tools" placeholder="Tools (comma separated)" />
+                    <input name="imageUrls" placeholder="Image URLs (comma separated)" />
+                </div>
+                <div style="display:flex;gap:8px;margin-top:8px">
+                    <input name="projectUrl" placeholder="Project URL" />
+                    <input name="clientName" placeholder="Client name" />
+                    <input name="completionYear" type="number" placeholder="Year" />
+                </div>
+                <div style="margin-top:8px">
+                    <input name="tags" placeholder="Tags (comma separated)" />
+                    <label style="margin-left:12px"><input name="isFeatured" type="checkbox" /> Featured</label>
+                </div>
+
+                <div class="form-actions" style="margin-top:12px">
+                    <button type="submit">Save</button>
+                    <button id="resetBtn" type="button">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Existing Projects</h2>
+            <div id="list"></div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
